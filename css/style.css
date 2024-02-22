@@ -48,19 +48,22 @@ header div {
 }
 
 main {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
+
+    margin-top: -80px;
 
     align-items: center;
 }
 
-main container {
+/* main container {
     position: absolute;
     z-index: 1;
 
     top: -80px;
-}
+} a melhor escolha é não usar o position e sim 
+o margin negativo, para sobrepor elementos*/
 
 .form-wrapper {
     padding: 64px 64px 0;
