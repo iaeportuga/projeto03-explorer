@@ -149,8 +149,7 @@ fieldset legend {
 }
 
 textarea {
-    height: 168px;
-
+    min-height: 168px;
     padding: 24px;
 }
 
@@ -191,7 +190,7 @@ textarea {
     opacity: 0;
 }
 
-.checkbox-wrapper label:before {
+.checkbox-wrapper label::before {
     content: '';
     width: 24px;
     height: 24px;
@@ -238,3 +237,17 @@ textarea {
     border-radius: 8px;
     border: 0;
 }
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #D6D6D6;
+    font-size: 14px;
+}
+
+/* input:invalid {
+    border: 1px solid #ff1010;
+} */
+
+input:required:not(:placeholder-shown):invalid  {
+    border: 1px solid #ff1010;
+  }
